@@ -1,0 +1,57 @@
+ Libvirt PHP binding README
+ ==========================
+
+Libvirt-php is basically just PHP binding for libvirt virtualization toolkit.
+For more information about libvirt please refer to: http://libvirt.org
+The project site for php-libvirt is http://libvirt.org/php and
+the documentation can be found in the doc and/or docs subdirectory of
+this repository.
+
+Implementation details
+----------------------
+
+libvirt-php is essentially a module to be loaded to your PHP module/binary.
+You need to define it to be loaded in /etc/php.ini and/or for newer PHP to
+/etc/php.d/*
+
+Settings
+--------
+
+Settings can be altered in /etc/php.ini file to use or not to use the longlong
+values converted into the string values using the libvirt.longlong_to_string
+boolean setting and the ISO path (used by the libvirt_get_iso_images() function)
+can be altered using the libvirt.iso_path path setting.
+
+Terminology
+-----------
+
+This app should be referred to as libvirt-php or "libvirt PHP binding".
+The project's old name (pre-0.4 version) was php-libvirt so both libvirt-php
+and php-libvirt are acceptable although libvirt-php is preferred.
+
+Pre-requisite software
+----------------------
+
+Where versions are noted below these are the versions tested to definitely
+work. For some of them you may be able to run with earlier releases, so
+please report any success to the mailing lists
+
+ libvirt
+ libxml2
+
+References
+----------
+
+If you want to contribute but you don't know where to find PHP API function
+documentation you can either download PHP source codes and investigate or
+you could try to have a look at:
+
+http://skydiamond.110mb.com/doc/php/x199598.html
+
+The site is having PHP API functions documented although the title says
+it's work in progress.
+
+Copyright /  License
+--------------------
+
+All the application code is covered under the LGPL-2.1 licence.

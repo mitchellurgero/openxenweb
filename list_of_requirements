@@ -1,0 +1,24 @@
+apt-get install gvncviewer
+apt install libvirt-dev xsltproc libxml2-dev libxml2 sudo git gvncviewer expect bc
+
+libvirt compiled from version 0.4.9+ http://libvirt.org/sources/php/libvirt-php-0.4.8.tar.gz (tar -zxvf libvirt-php-0.4.8.tar.gz) (./configure && make && make install && service php (php5-fpm) restart && service apache2 restart)
+nano /etc/php5/mods-available/libvirt.ini (extension=libvirt-php.so)
+php5enmod libvirt
+
+php-gd?
+
+
+visudo add:
+www-data ALL=(ALL) NOPASSWD:
+
+/etc/libvirt/libvirtd.conf add:
+unix_sock_group = "www-data"
+
+
+Make dir "/var/iso" owned by www-data for iso storage that can be uploaded via samba/ftp/scp
+Configure libvirt to use this path as the iso storage for KVM.
+
+For VNC Console access:
+/etc/libvirt/qemu.conf enable vnc_listen='0.0.0.0'
+
+

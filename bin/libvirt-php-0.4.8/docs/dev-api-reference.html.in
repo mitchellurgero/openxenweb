@@ -1,0 +1,1057 @@
+<?xml version="1.0"?>
+<html>
+  <body>
+<h1>Developer's API Reference guide</h1>
+
+    <h3>Functions</h3>
+
+    <!-- Links -->
+<pre>Total number of functions: 29. Functions supported are:<br /><br />
+	<code class="docref">get_datetime</code>()<br />
+	<code class="docref">set_logfile</code>($filename, $maxsize)<br />
+	<code class="docref">translate_counter_type</code>($type)<br />
+	<code class="docref">resource_change_counter</code>($type, $conn, $mem, $inc)<br />
+	<code class="docref">get_feature_binary</code>($name)<br />
+	<code class="docref">has_builtin</code>($name)<br />
+	<code class="docref">set_error</code>($msg)<br />
+	<code class="docref">set_vnc_location</code>($msg)<br />
+	<code class="docref">set_error_if_unset</code>($msg)<br />
+	<code class="docref">reset_error</code>()<br />
+	<code class="docref">free_resource</code>($type, $mem)<br />
+	<code class="docref">free_resources_on_connection</code>($conn)<br />
+	<code class="docref">check_resource_allocation</code>($conn, $type, $memp)<br />
+	<code class="docref">count_resources</code>($type)<br />
+	<code class="docref">size_def_to_mbytes</code>($arg)<br />
+	<code class="docref">is_local_connection</code>($conn)<br />
+	<code class="docref">get_string_from_xpath</code>($xml, $xpath, $val, $retVal)<br />
+	<code class="docref">dec_to_bin</code>($decimal, $binary)<br />
+	<code class="docref">get_subnet_bits</code>($ip)<br />
+	<code class="docref">get_next_free_numeric_value</code>($res, $xpath)<br />
+	<code class="docref">connection_get_domain_type</code>($conn, $arch)<br />
+	<code class="docref">connection_get_emulator</code>($conn, $arch)<br />
+	<code class="docref">connection_get_arch</code>($conn)<br />
+	<code class="docref">generate_uuid_any</code>()<br />
+	<code class="docref">generate_uuid</code>($conn)<br />
+	<code class="docref">get_disk_xml</code>($size, $path, $driver, $dev, $disk_flags)<br />
+	<code class="docref">get_network_xml</code>($mac, $network, $model)<br />
+	<code class="docref">installation_get_xml</code>($step, $conn, $name, $memMB, $maxmemMB, $arch, $uuid, $vCpus, $iso_image, $disks, $numDisks, $networks, $numNetworks, $domain_flags)<br />
+	<code class="docref">streamSink</code>($st, $bytes, $nbytes, $opaque)<br />
+</pre>
+<h3><a name="get_datetime"><code>get_datetime</code></a></h3>
+<pre class="programlisting">get_datetime()</pre>
+<p>[Since version 0.4.2]</p>
+<p>Function can be used to get date and time in the `YYYY-mm-dd HH:mm:ss` format, internally used for logging when debug logging is enabled using libvirt_set_logfile() API function..</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			Date/time string in `YYYY-mm-dd HH:mm:ss` format
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="set_logfile"><code>set_logfile</code></a></h3>
+<pre class="programlisting">set_logfile($filename, $maxsize)</pre>
+<p>[Since version 0.4.2]</p>
+<p>Function to set the log file. You can set log file to NULL to disable logging (default). Useful for debugging purposes..</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@filename [string]</tt></i>:</span>
+		    </td>
+		    <td>
+			 name of log file or NULL to disable
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@maxsize [long]</tt></i>:</span>
+		    </td>
+		    <td>
+			 integer value of maximum file size, file will be truncated after reaching max file size. Value is set in KiB.
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			0 on success, -errno otherwise
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="translate_counter_type"><code>translate_counter_type</code></a></h3>
+<pre class="programlisting">translate_counter_type($type)</pre>
+<p>[Since version 0.4.2]</p>
+<p>Function to translate the counter type into the string format.</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@type [int]</tt></i>:</span>
+		    </td>
+		    <td>
+			 integer identifier of the counter type
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			string interpretation of the counter type
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="resource_change_counter"><code>resource_change_counter</code></a></h3>
+<pre class="programlisting">resource_change_counter($type, $conn, $mem, $inc)</pre>
+<p>[Since version 0.4.2]</p>
+<p>Function to increment (inc = 1) / decrement (inc = 0) the resource pointers count including the memory location.</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@type [int]</tt></i>:</span>
+		    </td>
+		    <td>
+			 type of resource (INT_RESOURCE_x defines where x can be { CONNECTION | DOMAIN | NETWORK | NODEDEV | STORAGEPOOL | VOLUME | SNAPSHOT })
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@conn [virConnectPtr]</tt></i>:</span>
+		    </td>
+		    <td>
+			 libvirt connection pointer associated with the resource, NULL for libvirt connection objects
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@mem [pointer]</tt></i>:</span>
+		    </td>
+		    <td>
+			 Pointer to memory location for the resource. Will be converted to appropriate uint for the arch.
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@inc [int/bool]</tt></i>:</span>
+		    </td>
+		    <td>
+			 Increment the counter (1 = add memory location) or decrement the counter (0 = remove memory location) from entries.
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			0 on success, -errno otherwise
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="get_feature_binary"><code>get_feature_binary</code></a></h3>
+<pre class="programlisting">get_feature_binary($name)</pre>
+<p>[Since version 0.4.1(-3)]</p>
+<p>Function to get the existing feature binary for the specified feature, e.g. screenshot feature.</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@name [string]</tt></i>:</span>
+		    </td>
+		    <td>
+			 name of the feature to check against
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			Existing and executable binary name or NULL value
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="has_builtin"><code>has_builtin</code></a></h3>
+<pre class="programlisting">has_builtin($name)</pre>
+<p>[Since version 0.4.5]</p>
+<p>Function to get the information whether feature could be used as a built-in feature or not.</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@name [string]</tt></i>:</span>
+		    </td>
+		    <td>
+			 name of the feature to check against
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			1 if feature has a builtin fallback to be used or 0 otherwise
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="set_error"><code>set_error</code></a></h3>
+<pre class="programlisting">set_error($msg)</pre>
+<p>[Since version 0.4.1(-1)]</p>
+<p>This private function is used to set the error string to the library. This string can be obtained by libvirt_get_last_error() from the PHP application..</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@msg [string]</tt></i>:</span>
+		    </td>
+		    <td>
+			 error message string
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			None
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="set_vnc_location"><code>set_vnc_location</code></a></h3>
+<pre class="programlisting">set_vnc_location($msg)</pre>
+<p>[Since version 0.4.5]</p>
+<p>This private function is used to set the VNC location for the newly started installation.</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@msg [string]</tt></i>:</span>
+		    </td>
+		    <td>
+			 vnc location string
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			None
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="set_error_if_unset"><code>set_error_if_unset</code></a></h3>
+<pre class="programlisting">set_error_if_unset($msg)</pre>
+<p>[Since version 0.4.2]</p>
+<p>Function to set the error only if no other error is set yet.</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@msg [string]</tt></i>:</span>
+		    </td>
+		    <td>
+			 error message string
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			None
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="reset_error"><code>reset_error</code></a></h3>
+<pre class="programlisting">reset_error()</pre>
+<p>[Since version 0.4.2]</p>
+<p>Function to reset the error string set by set_error(). Same as set_error(NULL)..</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			None
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="free_resource"><code>free_resource</code></a></h3>
+<pre class="programlisting">free_resource($type, $mem)</pre>
+<p>[Since version 0.4.2]</p>
+<p>Function is used to free the the internal libvirt-php resource identified by it's type and memory location.</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@type [int]</tt></i>:</span>
+		    </td>
+		    <td>
+			 type of the resource to be freed, INT_RESOURCE_x where x can be { CONNECTION | DOMAIN | NETWORK | NODEDEV | STORAGEPOOL | VOLUME | SNAPSHOT }
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@mem [uint]</tt></i>:</span>
+		    </td>
+		    <td>
+			 memory location of the resource to be freed
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			None
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="free_resources_on_connection"><code>free_resources_on_connection</code></a></h3>
+<pre class="programlisting">free_resources_on_connection($conn)</pre>
+<p>[Since version 0.4.2]</p>
+<p>Function is used to free all the resources assigned to the connection identified by conn.</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@conn [virConnectPtr]</tt></i>:</span>
+		    </td>
+		    <td>
+			 libvirt connection pointer
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			None
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="check_resource_allocation"><code>check_resource_allocation</code></a></h3>
+<pre class="programlisting">check_resource_allocation($conn, $type, $memp)</pre>
+<p>[Since version 0.4.2]</p>
+<p>Function is used to check whether the resource identified by type and memory is allocated for connection conn or not.</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@conn [virConnectPtr]</tt></i>:</span>
+		    </td>
+		    <td>
+			 libvirt connection pointer
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@type [int]</tt></i>:</span>
+		    </td>
+		    <td>
+			 type of the counter to be checked, please see free_resource() API for possible values
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@memp [pointer]</tt></i>:</span>
+		    </td>
+		    <td>
+			 pointer to the memory
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			1 if resource is allocated, 0 otherwise
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="count_resources"><code>count_resources</code></a></h3>
+<pre class="programlisting">count_resources($type)</pre>
+<p>[Since version 0.4.2]</p>
+<p>Function counts the internal resources of module instance.</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@type [int]</tt></i>:</span>
+		    </td>
+		    <td>
+			 integer interpretation of the type, see free_resource() API function for possible values
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			number of resources already used
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="size_def_to_mbytes"><code>size_def_to_mbytes</code></a></h3>
+<pre class="programlisting">size_def_to_mbytes($arg)</pre>
+<p>[Since version 0.4.5]</p>
+<p>Function is used to translate the string size representation to the number of MBytes, used e.g. for domain installation.</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@arg [string]</tt></i>:</span>
+		    </td>
+		    <td>
+			 input string to be converted
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			number of megabytes extracted from the input string
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="is_local_connection"><code>is_local_connection</code></a></h3>
+<pre class="programlisting">is_local_connection($conn)</pre>
+<p>[Since version 0.4.5]</p>
+<p>Function is used to check whether the connection is the connection to the local hypervisor or to remote hypervisor.</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@conn [virConnectPtr]</tt></i>:</span>
+		    </td>
+		    <td>
+			 libvirt connection pointer
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			TRUE for local connection, FALSE for remote connection
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="get_string_from_xpath"><code>get_string_from_xpath</code></a></h3>
+<pre class="programlisting">get_string_from_xpath($xml, $xpath, $val, $retVal)</pre>
+<p>[Since version 0.4.1(-1)]</p>
+<p>Function is used to get the XML xPath expression from the XML document. This can be added to val array if not NULL..</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@xml [string]</tt></i>:</span>
+		    </td>
+		    <td>
+			 input XML document
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@xpath [string]</tt></i>:</span>
+		    </td>
+		    <td>
+			 xPath expression to find nodes in the XML document
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@val [array]</tt></i>:</span>
+		    </td>
+		    <td>
+			 Zend array resource to put data to
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@retVal [int]</tt></i>:</span>
+		    </td>
+		    <td>
+			 return value of the parsing
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			string containing data of last match found
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="dec_to_bin"><code>dec_to_bin</code></a></h3>
+<pre class="programlisting">dec_to_bin($decimal, $binary)</pre>
+<p>[Since version 0.4.1(-1)]</p>
+<p>Function dec_to_bin() converts the unsigned long long decimal (used e.g. for IPv4 address) to it's binary representation.</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@decimal [int]</tt></i>:</span>
+		    </td>
+		    <td>
+			 decimal value to be converted to binary interpretation
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@binary [string]</tt></i>:</span>
+		    </td>
+		    <td>
+			 output binary string with the binary interpretation
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			None
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="get_subnet_bits"><code>get_subnet_bits</code></a></h3>
+<pre class="programlisting">get_subnet_bits($ip)</pre>
+<p>[Since version 0.4.1(-1)]</p>
+<p>Function is used to get number of bits used by subnet determined by IP. Useful to get the CIDR IPv4 address representation.</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@ip [string]</tt></i>:</span>
+		    </td>
+		    <td>
+			 IP address to calculate subnet bits from
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			number of bits used by subnet mask
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="get_next_free_numeric_value"><code>get_next_free_numeric_value</code></a></h3>
+<pre class="programlisting">get_next_free_numeric_value($res, $xpath)</pre>
+<p>[Since version 0.4.2]</p>
+<p>Function is used to get the next free slot to be used for adding new NIC device or others.</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@res [virDomainPtr]</tt></i>:</span>
+		    </td>
+		    <td>
+			 standard libvirt domain pointer identified by virDomainPtr
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@xpath [string]</tt></i>:</span>
+		    </td>
+		    <td>
+			 xPath expression of items to get the next free value of
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			next free numeric value
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="connection_get_domain_type"><code>connection_get_domain_type</code></a></h3>
+<pre class="programlisting">connection_get_domain_type($conn, $arch)</pre>
+<p>[Since version 0.4.5]</p>
+<p>Function is required for functions that get the emulator for specific libvirt connection.</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@conn [virConnectPtr]</tt></i>:</span>
+		    </td>
+		    <td>
+			 libvirt connection pointer of connection to get emulator for
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@arch [string]</tt></i>:</span>
+		    </td>
+		    <td>
+			 optional architecture string, can be NULL to get default
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			path to the emulator
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="connection_get_emulator"><code>connection_get_emulator</code></a></h3>
+<pre class="programlisting">connection_get_emulator($conn, $arch)</pre>
+<p>[Since version 0.4.5]</p>
+<p>Function is required for functions that get the emulator for specific libvirt connection.</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@conn [virConnectPtr]</tt></i>:</span>
+		    </td>
+		    <td>
+			 libvirt connection pointer of connection to get emulator for
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@arch [string]</tt></i>:</span>
+		    </td>
+		    <td>
+			 optional architecture string, can be NULL to get default
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			path to the emulator
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="connection_get_arch"><code>connection_get_arch</code></a></h3>
+<pre class="programlisting">connection_get_arch($conn)</pre>
+<p>[Since version 0.4.5]</p>
+<p>Function is required for functions that get the architecture for specific libvirt connection.</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@conn [virConnectPtr]</tt></i>:</span>
+		    </td>
+		    <td>
+			 libvirt connection pointer of connection to get architecture for
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			path to the emulator
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="generate_uuid_any"><code>generate_uuid_any</code></a></h3>
+<pre class="programlisting">generate_uuid_any()</pre>
+<p>[Since version 0.4.5]</p>
+<p>Function is used to generate a new random UUID string.</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			a new random UUID string
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="generate_uuid"><code>generate_uuid</code></a></h3>
+<pre class="programlisting">generate_uuid($conn)</pre>
+<p>[Since version 0.4.5]</p>
+<p>Function is used to generate a new unused UUID string.</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@conn [virConnectPtr]</tt></i>:</span>
+		    </td>
+		    <td>
+			 libvirt connection pointer
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			a new unused random UUID string
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="get_disk_xml"><code>get_disk_xml</code></a></h3>
+<pre class="programlisting">get_disk_xml($size, $path, $driver, $dev, $disk_flags)</pre>
+<p>[Since version 0.4.5]</p>
+<p>Function is used to format single disk XML.</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@size [unsigned long long]</tt></i>:</span>
+		    </td>
+		    <td>
+			 size of disk for generating a new one (can be -1 not to generate even if it doesn't exist)
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@path [string]</tt></i>:</span>
+		    </td>
+		    <td>
+			 path to the storage on the host system
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@driver [string]</tt></i>:</span>
+		    </td>
+		    <td>
+			 driver to be used to access the disk
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@dev [string]</tt></i>:</span>
+		    </td>
+		    <td>
+			 device to be presented to the guest
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@disk_flags [int]</tt></i>:</span>
+		    </td>
+		    <td>
+			 disk type, VIR_DOMAIN_DISK_FILE or VIR_DOMAIN_DISK_BLOCK
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			XML output for the disk
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="get_network_xml"><code>get_network_xml</code></a></h3>
+<pre class="programlisting">get_network_xml($mac, $network, $model)</pre>
+<p>[Since version 0.4.5]</p>
+<p>Function is used to format single network interface XML.</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@mac [string]</tt></i>:</span>
+		    </td>
+		    <td>
+			 MAC address of the new interface
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@network [string]</tt></i>:</span>
+		    </td>
+		    <td>
+			 network name
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@model [string]</tt></i>:</span>
+		    </td>
+		    <td>
+			 optional model name
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			XML output for the network interface
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="installation_get_xml"><code>installation_get_xml</code></a></h3>
+<pre class="programlisting">installation_get_xml($step, $conn, $name, $memMB, $maxmemMB, $arch, $uuid, $vCpus, $iso_image, $disks, $numDisks, $networks, $numNetworks, $domain_flags)</pre>
+<p>[Since version 0.4.5]</p>
+<p>Function is used to generate the installation XML description to install a new domain.</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@step [int]</tt></i>:</span>
+		    </td>
+		    <td>
+			 number of step for XML output (1 or 2)
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@conn [virConnectPtr]</tt></i>:</span>
+		    </td>
+		    <td>
+			 libvirt connection pointer
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@name [string]</tt></i>:</span>
+		    </td>
+		    <td>
+			 name of the new virtual machine
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@memMB [int]</tt></i>:</span>
+		    </td>
+		    <td>
+			 memory in Megabytes
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@maxmemMB [int]</tt></i>:</span>
+		    </td>
+		    <td>
+			 maximum memory in Megabytes
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@arch [string]</tt></i>:</span>
+		    </td>
+		    <td>
+			 architecture to be used for the new domain, may be NULL to use the hypervisor default
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@uuid [string]</tt></i>:</span>
+		    </td>
+		    <td>
+			 UUID to be used or NULL to generate a new one
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@vCpus [int]</tt></i>:</span>
+		    </td>
+		    <td>
+			 number of virtual CPUs for the domain
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@iso_image [string]</tt></i>:</span>
+		    </td>
+		    <td>
+			 ISO image for the installation
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@disks [tVMDisk]</tt></i>:</span>
+		    </td>
+		    <td>
+			 disk structure with all the disks defined
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@numDisks [int]</tt></i>:</span>
+		    </td>
+		    <td>
+			 number of disks in the disk structure
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@networks [tVMNetwork]</tt></i>:</span>
+		    </td>
+		    <td>
+			 network structure with all the networks defined
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@numNetworks [int]</tt></i>:</span>
+		    </td>
+		    <td>
+			 number of networks in the network structure
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@domain_flags [int]</tt></i>:</span>
+		    </td>
+		    <td>
+			 flags for the domain installation
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			full XML output for installation
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+<h3><a name="streamSink"><code>streamSink</code></a></h3>
+<pre class="programlisting">streamSink($st, $bytes, $nbytes, $opaque)</pre>
+<p>[Since version 0.4.5]</p>
+<p>Function to write stream to file, borrowed from libvirt.</p><div class="variablelist">
+	<table border="0">
+		<col align="left" />
+		<tbody>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@st [virStreamPtr]</tt></i>:</span>
+		    </td>
+		    <td>
+			 stream pointer
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@bytes [void *]</tt></i>:</span>
+		    </td>
+		    <td>
+			 buffer array
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@nbytes [int]</tt></i>:</span>
+		    </td>
+		    <td>
+			 size of buffer
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>@opaque [void *]</tt></i>:</span>
+		    </td>
+		    <td>
+			 used for file descriptor
+		    </td>
+		  </tr>
+		  <tr>
+		    <td>
+			<span class="term"><i><tt>Returns</tt></i>:</span>
+		    </td>
+		    <td>
+			write() error code as it's calling write
+		    </td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
