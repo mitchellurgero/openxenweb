@@ -6325,3 +6325,1030 @@ echo: write error: Broken pipe
 [Thu Jul 07 15:54:50.359221 2016] [:error] [pid 1111] [client 10.1.1.17:26398] PHP Warning:  unlink(/var/www/html/code/workspace/OpenVirt/bin/libvirt-php-0.4.8/tools/missing): Permission denied in /var/www/html/code/components/filemanager/class.filemanager.php on line 340, referer: http://10.1.1.1/code/
 [Thu Jul 07 15:54:50.359274 2016] [:error] [pid 1111] [client 10.1.1.17:26398] PHP Warning:  rmdir(/var/www/html/code/workspace/OpenVirt/bin/libvirt-php-0.4.8/tools): Permission denied in /var/www/html/code/components/filemanager/class.filemanager.php on line 343, referer: http://10.1.1.1/code/
 [Thu Jul 07 15:54:50.359594 2016] [:error] [pid 1111] [client 10.1.1.17:26398] PHP Warning:  rmdir(/var/www/html/code/workspace/OpenVirt/bin/libvirt-php-0.4.8): Directory not empty in /var/www/html/code/components/filemanager/class.filemanager.php on line 343, referer: http://10.1.1.1/code/
+[2016-07-07 18:36:24 libvirt-php/core   ]: libvirt_connect: Connection to xen:/// established, returning 0x55f73d693fe0
+[2016-07-07 18:36:24 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d693fe0) completed successfully
+[2016-07-07 18:36:24 libvirt-php/core   ]: libvirt_connect: Connection to xen:/// established, returning 0x55f73d693fe0
+[2016-07-07 18:36:24 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d693fe0) completed successfully
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d693fe0
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d68ea00
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d68ea00) returned 0
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d68ea00
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d68ea00) returned 1
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'torrentServer', returning 0x55f73d68eac0
+[2016-07-07 18:36:25 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d68ea00 (conn 0x55f73d693fe0) is allocated
+[2016-07-07 18:36:25 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d68ea00) completed successfully
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d68eac0) returned 0
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d68eac0
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d68eac0) returned 13
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'MIAB', returning 0x55f73d6961d0
+[2016-07-07 18:36:25 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d68eac0 (conn 0x55f73d693fe0) is allocated
+[2016-07-07 18:36:25 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d68eac0) completed successfully
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d6961d0) returned 0
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d6961d0
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d6961d0) returned 4
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'a_ltc_cas', returning 0x55f73d6911d0
+[2016-07-07 18:36:25 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d6961d0 (conn 0x55f73d693fe0) is allocated
+[2016-07-07 18:36:25 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d6961d0) completed successfully
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d6911d0) returned 0
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d6911d0
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d6911d0) returned -1
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'kolab-server', returning 0x55f73d6a2ac0
+[2016-07-07 18:36:25 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d6911d0 (conn 0x55f73d693fe0) is allocated
+[2016-07-07 18:36:25 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d6911d0) completed successfully
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d6a2ac0) returned 0
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d6a2ac0
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d6a2ac0) returned -1
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'airchat-001', returning 0x55f73d6abb00
+[2016-07-07 18:36:25 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d6a2ac0 (conn 0x55f73d693fe0) is allocated
+[2016-07-07 18:36:25 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d6a2ac0) completed successfully
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d6abb00) returned 0
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d6abb00
+[2016-07-07 18:36:25 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d6abb00) returned -1
+[2016-07-07 18:36:25 libvirt-php/core   ]: free_resource: Freeing libvirt domain resource at 0x55f73d6abb00
+[2016-07-07 18:36:25 libvirt-php/core   ]: free_resource: virDomainFree(0x55f73d6abb00) completed successfully
+[2016-07-07 18:36:25 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d693fe0) completed successfully
+[2016-07-07 18:36:25 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d6abb00 (conn 0x7f8f5427a288) is not allocated
+[2016-07-07 18:37:21 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d5c3b10
+[2016-07-07 18:37:21 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:37:21 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:37:21 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:37:21 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:37:21 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:37:21 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:37:21 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:37:21 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:37:21 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:37:21 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:37:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d558de0
+[2016-07-07 18:37:21 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d558de0) returned 0
+[2016-07-07 18:37:21 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x55f73d558de0 (xPath = (null))
+[2016-07-07 18:37:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d558de0 (conn 0x55f73d5c3b10) is allocated
+[2016-07-07 18:37:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d558de0) completed successfully
+[2016-07-07 18:37:21 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d5c3b10) completed successfully
+[2016-07-07 18:40:37 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d553740
+[2016-07-07 18:40:37 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:40:37 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:40:37 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:40:37 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:40:37 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:40:37 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:40:37 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:40:37 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:40:37 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:40:37 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:40:37 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d58aab0
+[2016-07-07 18:40:37 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d58aab0) returned 0
+[2016-07-07 18:40:37 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x55f73d58aab0 (xPath = (null))
+[2016-07-07 18:40:37 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d58aab0 (conn 0x55f73d553740) is allocated
+[2016-07-07 18:40:37 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d58aab0) completed successfully
+[2016-07-07 18:40:37 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d553740) completed successfully
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_connect: Connection to xen:/// established, returning 0x55f73d518030
+[2016-07-07 18:40:45 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d518030) completed successfully
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_connect: Connection to xen:/// established, returning 0x55f73d518030
+[2016-07-07 18:40:45 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d518030) completed successfully
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d5189f0
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d5191f0
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d5191f0) returned 0
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d5191f0
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d5191f0) returned 1
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'torrentServer', returning 0x55f73d2bd550
+[2016-07-07 18:40:45 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d5191f0 (conn 0x55f73d5189f0) is allocated
+[2016-07-07 18:40:45 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d5191f0) completed successfully
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d2bd550) returned 0
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d2bd550
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d2bd550) returned 13
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'MIAB', returning 0x55f73d4e2230
+[2016-07-07 18:40:45 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d2bd550 (conn 0x55f73d5189f0) is allocated
+[2016-07-07 18:40:45 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d2bd550) completed successfully
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d4e2230) returned 0
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d4e2230
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d4e2230) returned 4
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'a_ltc_cas', returning 0x55f73d2bd550
+[2016-07-07 18:40:45 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d4e2230 (conn 0x55f73d5189f0) is allocated
+[2016-07-07 18:40:45 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d4e2230) completed successfully
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d2bd550) returned 0
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d2bd550
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d2bd550) returned -1
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'kolab-server', returning 0x55f73d4f4360
+[2016-07-07 18:40:45 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d2bd550 (conn 0x55f73d5189f0) is allocated
+[2016-07-07 18:40:45 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d2bd550) completed successfully
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d4f4360) returned 0
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d4f4360
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d4f4360) returned -1
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'airchat-001', returning 0x55f73d4f4150
+[2016-07-07 18:40:45 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d4f4360 (conn 0x55f73d5189f0) is allocated
+[2016-07-07 18:40:45 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d4f4360) completed successfully
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d4f4150) returned 0
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d4f4150
+[2016-07-07 18:40:45 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d4f4150) returned -1
+[2016-07-07 18:40:45 libvirt-php/core   ]: free_resource: Freeing libvirt domain resource at 0x55f73d4f4150
+[2016-07-07 18:40:45 libvirt-php/core   ]: free_resource: virDomainFree(0x55f73d4f4150) completed successfully
+[2016-07-07 18:40:45 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d5189f0) completed successfully
+[2016-07-07 18:40:45 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d4f4150 (conn 0x7f8f5427bf60) is not allocated
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_connect: Connection to xen:/// established, returning 0x55f73d4bb390
+[2016-07-07 18:40:46 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d4bb390) completed successfully
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_connect: Connection to xen:/// established, returning 0x55f73d4bb390
+[2016-07-07 18:40:46 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d4bb390) completed successfully
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d518be0
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d4bbc20
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d4bbc20) returned 0
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d4bbc20
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d4bbc20) returned 1
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'torrentServer', returning 0x55f73d4bc020
+[2016-07-07 18:40:46 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d4bbc20 (conn 0x55f73d518be0) is allocated
+[2016-07-07 18:40:46 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d4bbc20) completed successfully
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d4bc020) returned 0
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d4bc020
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d4bc020) returned 13
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'MIAB', returning 0x55f73d516750
+[2016-07-07 18:40:46 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d4bc020 (conn 0x55f73d518be0) is allocated
+[2016-07-07 18:40:46 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d4bc020) completed successfully
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d516750) returned 0
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d516750
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d516750) returned 4
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'a_ltc_cas', returning 0x55f73d4bc020
+[2016-07-07 18:40:46 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d516750 (conn 0x55f73d518be0) is allocated
+[2016-07-07 18:40:46 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d516750) completed successfully
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d4bc020) returned 0
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d4bc020
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d4bc020) returned -1
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'kolab-server', returning 0x55f73d5256c0
+[2016-07-07 18:40:46 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d4bc020 (conn 0x55f73d518be0) is allocated
+[2016-07-07 18:40:46 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d4bc020) completed successfully
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d5256c0) returned 0
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d5256c0
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d5256c0) returned -1
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'airchat-001', returning 0x55f73d52e640
+[2016-07-07 18:40:46 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d5256c0 (conn 0x55f73d518be0) is allocated
+[2016-07-07 18:40:46 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d5256c0) completed successfully
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d52e640) returned 0
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d52e640
+[2016-07-07 18:40:46 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d52e640) returned -1
+[2016-07-07 18:40:46 libvirt-php/core   ]: free_resource: Freeing libvirt domain resource at 0x55f73d52e640
+[2016-07-07 18:40:46 libvirt-php/core   ]: free_resource: virDomainFree(0x55f73d52e640) completed successfully
+[2016-07-07 18:40:46 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d518be0) completed successfully
+[2016-07-07 18:40:46 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d52e640 (conn 0x7f8f5427c248) is not allocated
+[2016-07-07 18:40:48 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d545c10
+[2016-07-07 18:40:48 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:40:48 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:40:48 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:40:48 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:40:48 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:40:48 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:40:48 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:40:48 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:40:48 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:40:48 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:40:48 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'torrentServer', returning 0x55f73d546440
+[2016-07-07 18:40:48 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d546440) returned 0
+[2016-07-07 18:40:48 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x55f73d546440 (xPath = (null))
+[2016-07-07 18:40:48 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d546440 (conn 0x55f73d545c10) is allocated
+[2016-07-07 18:40:48 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d546440) completed successfully
+[2016-07-07 18:40:48 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d545c10) completed successfully
+[2016-07-07 18:43:34 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d630700
+[2016-07-07 18:43:34 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:43:34 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:43:34 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:43:34 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:43:34 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:43:34 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:43:34 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:43:34 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:43:34 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:43:34 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:43:34 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d510250
+[2016-07-07 18:43:34 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d510250) returned 0
+[2016-07-07 18:43:34 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x55f73d510250 (xPath = (null))
+[2016-07-07 18:43:34 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d510250 (conn 0x55f73d630700) is allocated
+[2016-07-07 18:43:34 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d510250) completed successfully
+[2016-07-07 18:43:34 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d630700) completed successfully
+[2016-07-07 18:44:28 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d548a70
+[2016-07-07 18:44:28 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:44:28 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:44:28 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:44:28 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:44:28 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:44:28 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:44:28 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:44:28 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:44:28 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:44:28 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:44:28 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d546440
+[2016-07-07 18:44:28 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d546440) returned 0
+[2016-07-07 18:44:28 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x55f73d546440 (xPath = (null))
+[2016-07-07 18:44:28 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d546440 (conn 0x55f73d548a70) is allocated
+[2016-07-07 18:44:28 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d546440) completed successfully
+[2016-07-07 18:44:28 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d548a70) completed successfully
+[2016-07-07 18:44:42 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d5c4b60
+[2016-07-07 18:44:42 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:44:42 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:44:42 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:44:42 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:44:42 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:44:42 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:44:42 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:44:42 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:44:42 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:44:42 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:44:42 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d5c30b0
+[2016-07-07 18:44:42 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d5c30b0) returned 0
+[2016-07-07 18:44:42 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x55f73d5c30b0 (xPath = (null))
+[2016-07-07 18:44:42 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d5c30b0 (conn 0x55f73d5c4b60) is allocated
+[2016-07-07 18:44:42 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d5c30b0) completed successfully
+[2016-07-07 18:44:42 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d5c4b60) completed successfully
+[2016-07-07 18:45:40 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d4db060
+[2016-07-07 18:45:40 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:45:40 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:45:40 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:45:40 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:45:40 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:45:40 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:45:40 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:45:40 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:45:40 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:45:40 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:45:40 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d4bbb10
+[2016-07-07 18:45:40 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d4bbb10) returned 0
+[2016-07-07 18:45:40 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x55f73d4bbb10 (xPath = (null))
+[2016-07-07 18:45:40 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d4bbb10 (conn 0x55f73d4db060) is allocated
+[2016-07-07 18:45:40 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d4bbb10) completed successfully
+[2016-07-07 18:45:40 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d4db060) completed successfully
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_connect: Connection to xen:/// established, returning 0x55f73d693fe0
+[2016-07-07 18:46:21 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d693fe0) completed successfully
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_connect: Connection to xen:/// established, returning 0x55f73d693fe0
+[2016-07-07 18:46:21 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d693fe0) completed successfully
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d4bb4f0
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d4bc190
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d4bc190) returned 0
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d4bc190
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d4bc190) returned 1
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'torrentServer', returning 0x55f73d2bd550
+[2016-07-07 18:46:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d4bc190 (conn 0x55f73d4bb4f0) is allocated
+[2016-07-07 18:46:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d4bc190) completed successfully
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d2bd550) returned 0
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d2bd550
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d2bd550) returned 13
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'MIAB', returning 0x55f73d4e5c10
+[2016-07-07 18:46:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d2bd550 (conn 0x55f73d4bb4f0) is allocated
+[2016-07-07 18:46:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d2bd550) completed successfully
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d4e5c10) returned 0
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d4e5c10
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d4e5c10) returned 4
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'a_ltc_cas', returning 0x55f73d4eef20
+[2016-07-07 18:46:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d4e5c10 (conn 0x55f73d4bb4f0) is allocated
+[2016-07-07 18:46:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d4e5c10) completed successfully
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d4eef20) returned 0
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d4eef20
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d4eef20) returned -1
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'kolab-server', returning 0x55f73d4f7e90
+[2016-07-07 18:46:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d4eef20 (conn 0x55f73d4bb4f0) is allocated
+[2016-07-07 18:46:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d4eef20) completed successfully
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d4f7e90) returned 0
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d4f7e90
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d4f7e90) returned -1
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'airchat-001', returning 0x55f73d500d90
+[2016-07-07 18:46:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d4f7e90 (conn 0x55f73d4bb4f0) is allocated
+[2016-07-07 18:46:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d4f7e90) completed successfully
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d500d90) returned 0
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d500d90
+[2016-07-07 18:46:21 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d500d90) returned -1
+[2016-07-07 18:46:21 libvirt-php/core   ]: free_resource: Freeing libvirt domain resource at 0x55f73d500d90
+[2016-07-07 18:46:21 libvirt-php/core   ]: free_resource: virDomainFree(0x55f73d500d90) completed successfully
+[2016-07-07 18:46:21 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d4bb4f0) completed successfully
+[2016-07-07 18:46:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d500d90 (conn 0x7f8f5427c248) is not allocated
+[2016-07-07 18:46:22 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d50f490
+[2016-07-07 18:46:22 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:46:22 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:46:22 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:46:22 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:46:22 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:46:22 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:46:22 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:46:22 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:46:22 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:46:22 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:46:22 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d50f8c0
+[2016-07-07 18:46:22 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d50f8c0) returned 0
+[2016-07-07 18:46:22 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x55f73d50f8c0 (xPath = (null))
+[2016-07-07 18:46:22 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d50f8c0 (conn 0x55f73d50f490) is allocated
+[2016-07-07 18:46:22 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d50f8c0) completed successfully
+[2016-07-07 18:46:22 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d50f490) completed successfully
+[2016-07-07 18:49:11 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d5c4d60
+[2016-07-07 18:49:11 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:49:11 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:49:11 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:49:11 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:49:11 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:49:11 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:49:11 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:49:11 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:49:11 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:49:11 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:49:11 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d4bb600
+[2016-07-07 18:49:11 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d4bb600) returned 0
+[2016-07-07 18:49:11 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x55f73d4bb600 (xPath = (null))
+[2016-07-07 18:49:11 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d4bb600 (conn 0x55f73d5c4d60) is allocated
+[2016-07-07 18:49:11 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d4bb600) completed successfully
+[2016-07-07 18:49:11 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d5c4d60) completed successfully
+[2016-07-07 18:49:34 libvirt-php/core   ]: libvirt_connect: Connection to xen:/// established, returning 0x55f73d590060
+[2016-07-07 18:49:34 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d590060) completed successfully
+[2016-07-07 18:49:34 libvirt-php/core   ]: libvirt_connect: Connection to xen:/// established, returning 0x55f73d590060
+[2016-07-07 18:49:34 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d590060) completed successfully
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d4bb5d0
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d4d85c0
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d4d85c0) returned 0
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d4d85c0
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d4d85c0) returned 1
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'torrentServer', returning 0x55f73d2bd500
+[2016-07-07 18:49:35 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d4d85c0 (conn 0x55f73d4bb5d0) is allocated
+[2016-07-07 18:49:35 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d4d85c0) completed successfully
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d2bd500) returned 0
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d2bd500
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d2bd500) returned 13
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'MIAB', returning 0x55f73d4e4770
+[2016-07-07 18:49:35 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d2bd500 (conn 0x55f73d4bb5d0) is allocated
+[2016-07-07 18:49:35 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d2bd500) completed successfully
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d4e4770) returned 0
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d4e4770
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d4e4770) returned 4
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'a_ltc_cas', returning 0x55f73d4e45c0
+[2016-07-07 18:49:35 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d4e4770 (conn 0x55f73d4bb5d0) is allocated
+[2016-07-07 18:49:35 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d4e4770) completed successfully
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d4e45c0) returned 0
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d4e45c0
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d4e45c0) returned -1
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'kolab-server', returning 0x55f73d4f69d0
+[2016-07-07 18:49:35 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d4e45c0 (conn 0x55f73d4bb5d0) is allocated
+[2016-07-07 18:49:35 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d4e45c0) completed successfully
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d4f69d0) returned 0
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d4f69d0
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d4f69d0) returned -1
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'airchat-001', returning 0x55f73d4f67c0
+[2016-07-07 18:49:35 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d4f69d0 (conn 0x55f73d4bb5d0) is allocated
+[2016-07-07 18:49:35 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d4f69d0) completed successfully
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d4f67c0) returned 0
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d4f67c0
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d4f67c0) returned -1
+[2016-07-07 18:49:35 libvirt-php/core   ]: free_resource: Freeing libvirt domain resource at 0x55f73d4f67c0
+[2016-07-07 18:49:35 libvirt-php/core   ]: free_resource: virDomainFree(0x55f73d4f67c0) completed successfully
+[2016-07-07 18:49:35 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d4bb5d0) completed successfully
+[2016-07-07 18:49:35 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d4f67c0 (conn 0x7f8f5427c0e0) is not allocated
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d50fca0
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d4f67c0
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d4f67c0) returned 0
+[2016-07-07 18:49:35 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x55f73d4f67c0 (xPath = (null))
+[2016-07-07 18:49:35 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d4f67c0 (conn 0x55f73d50fca0) is allocated
+[2016-07-07 18:49:35 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d4f67c0) completed successfully
+[2016-07-07 18:49:35 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d50fca0) completed successfully
+[2016-07-07 18:50:19 libvirt-php/core   ]: libvirt_connect: Connection to xen:/// established, returning 0x55f73d693fe0
+[2016-07-07 18:50:19 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d693fe0) completed successfully
+[2016-07-07 18:50:19 libvirt-php/core   ]: libvirt_connect: Connection to xen:/// established, returning 0x55f73d693fe0
+[2016-07-07 18:50:19 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d693fe0) completed successfully
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d6c6ba0
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d6c6a40
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d6c6a40) returned 0
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d6c6a40
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d6c6a40) returned 1
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'torrentServer', returning 0x55f73d6d00c0
+[2016-07-07 18:50:20 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d6c6a40 (conn 0x55f73d6c6ba0) is allocated
+[2016-07-07 18:50:20 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d6c6a40) completed successfully
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d6d00c0) returned 0
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d6d00c0
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d6d00c0) returned 13
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'MIAB', returning 0x55f73d6d91c0
+[2016-07-07 18:50:20 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d6d00c0 (conn 0x55f73d6c6ba0) is allocated
+[2016-07-07 18:50:20 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d6d00c0) completed successfully
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d6d91c0) returned 0
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d6d91c0
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d6d91c0) returned 4
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'a_ltc_cas', returning 0x55f73d6d9180
+[2016-07-07 18:50:20 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d6d91c0 (conn 0x55f73d6c6ba0) is allocated
+[2016-07-07 18:50:20 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d6d91c0) completed successfully
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d6d9180) returned 0
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d6d9180
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d6d9180) returned -1
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'kolab-server', returning 0x55f73d6e2460
+[2016-07-07 18:50:20 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d6d9180 (conn 0x55f73d6c6ba0) is allocated
+[2016-07-07 18:50:20 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d6d9180) completed successfully
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d6e2460) returned 0
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d6e2460
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d6e2460) returned -1
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'airchat-001', returning 0x55f73d6eb230
+[2016-07-07 18:50:20 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d6e2460 (conn 0x55f73d6c6ba0) is allocated
+[2016-07-07 18:50:20 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d6e2460) completed successfully
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d6eb230) returned 0
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d6eb230
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d6eb230) returned -1
+[2016-07-07 18:50:20 libvirt-php/core   ]: free_resource: Freeing libvirt domain resource at 0x55f73d6eb230
+[2016-07-07 18:50:20 libvirt-php/core   ]: free_resource: virDomainFree(0x55f73d6eb230) completed successfully
+[2016-07-07 18:50:20 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d6c6ba0) completed successfully
+[2016-07-07 18:50:20 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d6eb230 (conn 0x7f8f5427c0e0) is not allocated
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d744cc0
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d693fe0
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d693fe0) returned 0
+[2016-07-07 18:50:20 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x55f73d693fe0 (xPath = (null))
+[2016-07-07 18:50:20 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d693fe0 (conn 0x55f73d744cc0) is allocated
+[2016-07-07 18:50:20 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d693fe0) completed successfully
+[2016-07-07 18:50:20 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d744cc0) completed successfully
+[2016-07-07 18:51:21 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d5d44e0
+[2016-07-07 18:51:21 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:51:21 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:51:21 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:51:21 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:51:21 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:51:21 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:51:21 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:51:21 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:51:21 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:51:21 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:51:21 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d5c5960
+[2016-07-07 18:51:21 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d5c5960) returned 0
+[2016-07-07 18:51:21 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x55f73d5c5960 (xPath = (null))
+[2016-07-07 18:51:21 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d5c5960 (conn 0x55f73d5d44e0) is allocated
+[2016-07-07 18:51:21 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d5c5960) completed successfully
+[2016-07-07 18:51:21 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d5d44e0) completed successfully
+[2016-07-07 18:52:21 libvirt-php/core   ]: libvirt_connect: Connection to xen:/// established, returning 0x55f73d7025c0
+[2016-07-07 18:52:21 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d7025c0) completed successfully
+[2016-07-07 18:52:21 libvirt-php/core   ]: libvirt_connect: Connection to xen:/// established, returning 0x55f73d7025c0
+[2016-07-07 18:52:21 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d7025c0) completed successfully
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d5c9a90
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d5c5ba0
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d5c5ba0) returned 0
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d5c5ba0
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d5c5ba0) returned 1
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'torrentServer', returning 0x55f73d5cb6d0
+[2016-07-07 18:52:22 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d5c5ba0 (conn 0x55f73d5c9a90) is allocated
+[2016-07-07 18:52:22 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d5c5ba0) completed successfully
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d5cb6d0) returned 0
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d5cb6d0
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d5cb6d0) returned 13
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'MIAB', returning 0x55f73d5df230
+[2016-07-07 18:52:22 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d5cb6d0 (conn 0x55f73d5c9a90) is allocated
+[2016-07-07 18:52:22 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d5cb6d0) completed successfully
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d5df230) returned 0
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d5df230
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d5df230) returned 4
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'a_ltc_cas', returning 0x55f73d5e8440
+[2016-07-07 18:52:22 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d5df230 (conn 0x55f73d5c9a90) is allocated
+[2016-07-07 18:52:22 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d5df230) completed successfully
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d5e8440) returned 0
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d5e8440
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d5e8440) returned -1
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'kolab-server', returning 0x55f73d5df230
+[2016-07-07 18:52:22 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d5e8440 (conn 0x55f73d5c9a90) is allocated
+[2016-07-07 18:52:22 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d5e8440) completed successfully
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d5df230) returned 0
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d5df230
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d5df230) returned -1
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'airchat-001', returning 0x55f73d5e8570
+[2016-07-07 18:52:22 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d5df230 (conn 0x55f73d5c9a90) is allocated
+[2016-07-07 18:52:22 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d5df230) completed successfully
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d5e8570) returned 0
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d5e8570
+[2016-07-07 18:52:22 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d5e8570) returned -1
+[2016-07-07 18:52:22 libvirt-php/core   ]: free_resource: Freeing libvirt domain resource at 0x55f73d5e8570
+[2016-07-07 18:52:22 libvirt-php/core   ]: free_resource: virDomainFree(0x55f73d5e8570) completed successfully
+[2016-07-07 18:52:22 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d5c9a90) completed successfully
+[2016-07-07 18:52:22 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d5e8570 (conn 0x7f8f5427c0e0) is not allocated
+[2016-07-07 18:52:23 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d64acb0
+[2016-07-07 18:52:23 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:52:23 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:52:23 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:52:23 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:52:23 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:52:23 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:52:23 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:52:23 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:52:23 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:52:23 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:52:23 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d5cefa0
+[2016-07-07 18:52:23 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d5cefa0) returned 0
+[2016-07-07 18:52:23 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x55f73d5cefa0 (xPath = (null))
+[2016-07-07 18:52:23 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d5cefa0 (conn 0x55f73d64acb0) is allocated
+[2016-07-07 18:52:23 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d5cefa0) completed successfully
+[2016-07-07 18:52:23 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d64acb0) completed successfully
+[2016-07-07 18:52:34 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d511f70
+[2016-07-07 18:52:34 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:52:34 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:52:34 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:52:34 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:52:34 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:52:34 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:52:34 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:52:34 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:52:34 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:52:34 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:52:34 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d4d84a0
+[2016-07-07 18:52:34 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d4d84a0) returned 0
+[2016-07-07 18:52:34 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x55f73d4d84a0 (xPath = (null))
+[2016-07-07 18:52:34 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d4d84a0 (conn 0x55f73d511f70) is allocated
+[2016-07-07 18:52:34 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d4d84a0) completed successfully
+[2016-07-07 18:52:34 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d511f70) completed successfully
+[2016-07-07 18:52:48 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d4dab80
+[2016-07-07 18:52:48 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:52:48 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:52:48 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:52:48 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:52:48 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:52:48 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:52:48 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:52:48 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:52:48 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:52:48 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:52:48 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d4d8470
+[2016-07-07 18:52:48 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d4d8470) returned 0
+[2016-07-07 18:52:48 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x55f73d4d8470 (xPath = (null))
+[2016-07-07 18:52:48 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d4d8470 (conn 0x55f73d4dab80) is allocated
+[2016-07-07 18:52:48 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d4d8470) completed successfully
+[2016-07-07 18:52:48 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d4dab80) completed successfully
+[2016-07-07 18:53:14 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d549070
+[2016-07-07 18:53:14 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:53:14 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:53:14 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:53:14 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:53:14 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:53:14 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:53:14 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:53:14 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:53:14 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:53:14 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:53:14 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d518350
+[2016-07-07 18:53:14 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d518350) returned 0
+[2016-07-07 18:53:14 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x55f73d518350 (xPath = (null))
+[2016-07-07 18:53:14 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d518350 (conn 0x55f73d549070) is allocated
+[2016-07-07 18:53:14 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d518350) completed successfully
+[2016-07-07 18:53:14 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d549070) completed successfully
+[2016-07-07 18:54:35 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d4db3a0
+[2016-07-07 18:54:35 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:54:35 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:54:35 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:54:35 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:54:35 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:54:35 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:54:35 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:54:35 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:54:35 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:54:35 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:54:35 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d4d9750
+[2016-07-07 18:54:35 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d4d9750) returned 0
+[2016-07-07 18:54:35 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x55f73d4d9750 (xPath = (null))
+[2016-07-07 18:54:35 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d4d9750 (conn 0x55f73d4db3a0) is allocated
+[2016-07-07 18:54:35 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d4d9750) completed successfully
+[2016-07-07 18:54:35 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d4db3a0) completed successfully
+[2016-07-07 18:55:18 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d510600
+[2016-07-07 18:55:18 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:55:18 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:55:18 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:55:18 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:55:18 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:55:18 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:55:18 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:55:18 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:55:18 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:55:18 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:55:18 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d4bc0f0
+[2016-07-07 18:55:18 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d4bc0f0) returned 0
+[2016-07-07 18:55:18 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x55f73d4bc0f0 (xPath = (null))
+[2016-07-07 18:55:18 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d4bc0f0 (conn 0x55f73d510600) is allocated
+[2016-07-07 18:55:18 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d4bc0f0) completed successfully
+[2016-07-07 18:55:18 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d510600) completed successfully
+[2016-07-07 18:55:46 libvirt-php/core   ]: libvirt_connect: Connection to xen:/// established, returning 0x55f73d590060
+[2016-07-07 18:55:46 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d590060) completed successfully
+[2016-07-07 18:55:46 libvirt-php/core   ]: libvirt_connect: Connection to xen:/// established, returning 0x55f73d590060
+[2016-07-07 18:55:46 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d590060) completed successfully
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d590450
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d55a050
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d55a050) returned 0
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d55a050
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d55a050) returned 1
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'torrentServer', returning 0x55f73d5533d0
+[2016-07-07 18:55:47 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d55a050 (conn 0x55f73d590450) is allocated
+[2016-07-07 18:55:47 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d55a050) completed successfully
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d5533d0) returned 0
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d5533d0
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d5533d0) returned 13
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'MIAB', returning 0x55f73d518760
+[2016-07-07 18:55:47 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d5533d0 (conn 0x55f73d590450) is allocated
+[2016-07-07 18:55:47 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d5533d0) completed successfully
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d518760) returned 0
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d518760
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d518760) returned 4
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'a_ltc_cas', returning 0x55f73d5a65f0
+[2016-07-07 18:55:47 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d518760 (conn 0x55f73d590450) is allocated
+[2016-07-07 18:55:47 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d518760) completed successfully
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d5a65f0) returned 0
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d5a65f0
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d5a65f0) returned -1
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'kolab-server', returning 0x55f73d5afa00
+[2016-07-07 18:55:47 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d5a65f0 (conn 0x55f73d590450) is allocated
+[2016-07-07 18:55:47 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d5a65f0) completed successfully
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d5afa00) returned 0
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d5afa00
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d5afa00) returned -1
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'airchat-001', returning 0x55f73d5b8930
+[2016-07-07 18:55:47 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d5afa00 (conn 0x55f73d590450) is allocated
+[2016-07-07 18:55:47 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d5afa00) completed successfully
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d5b8930) returned 0
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d5b8930
+[2016-07-07 18:55:47 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d5b8930) returned -1
+[2016-07-07 18:55:47 libvirt-php/core   ]: free_resource: Freeing libvirt domain resource at 0x55f73d5b8930
+[2016-07-07 18:55:47 libvirt-php/core   ]: free_resource: virDomainFree(0x55f73d5b8930) completed successfully
+[2016-07-07 18:55:47 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d590450) completed successfully
+[2016-07-07 18:55:47 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d5b8930 (conn 0x7f8f5427c0e0) is not allocated
+[2016-07-07 18:55:48 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d5c8d10
+[2016-07-07 18:55:48 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:55:48 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:55:48 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:55:48 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:55:48 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:55:48 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:55:48 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:55:48 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:55:48 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:55:48 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:55:48 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d5c6ca0
+[2016-07-07 18:55:48 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d5c6ca0) returned 0
+[2016-07-07 18:55:48 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x55f73d5c6ca0 (xPath = (null))
+[2016-07-07 18:55:48 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d5c6ca0 (conn 0x55f73d5c8d10) is allocated
+[2016-07-07 18:55:48 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d5c6ca0) completed successfully
+[2016-07-07 18:55:48 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d5c8d10) completed successfully
+[2016-07-07 18:56:02 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d4bc000
+[2016-07-07 18:56:02 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:56:02 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:56:02 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:56:02 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:56:02 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:56:02 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:56:02 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:56:02 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:56:02 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:56:02 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:56:02 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d4d7750
+[2016-07-07 18:56:02 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d4d7750) returned 0
+[2016-07-07 18:56:02 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x55f73d4d7750 (xPath = (null))
+[2016-07-07 18:56:02 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d4d7750 (conn 0x55f73d4bc000) is allocated
+[2016-07-07 18:56:02 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d4d7750) completed successfully
+[2016-07-07 18:56:02 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d4bc000) completed successfully
+[2016-07-07 18:56:43 libvirt-php/core   ]: libvirt_connect: Connection to xen:/// established, returning 0x55f73d7025c0
+[2016-07-07 18:56:43 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d7025c0) completed successfully
+[2016-07-07 18:56:43 libvirt-php/core   ]: libvirt_connect: Connection to xen:/// established, returning 0x55f73d7025c0
+[2016-07-07 18:56:43 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d7025c0) completed successfully
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d702860
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d703100
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d703100) returned 0
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d703100
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d703100) returned 1
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'torrentServer', returning 0x55f73d633970
+[2016-07-07 18:56:44 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d703100 (conn 0x55f73d702860) is allocated
+[2016-07-07 18:56:44 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d703100) completed successfully
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d633970) returned 0
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d633970
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d633970) returned 13
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'MIAB', returning 0x55f73d564290
+[2016-07-07 18:56:44 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d633970 (conn 0x55f73d702860) is allocated
+[2016-07-07 18:56:44 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d633970) completed successfully
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d564290) returned 0
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d564290
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d564290) returned 4
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'a_ltc_cas', returning 0x55f73d633970
+[2016-07-07 18:56:44 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d564290 (conn 0x55f73d702860) is allocated
+[2016-07-07 18:56:44 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d564290) completed successfully
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d633970) returned 0
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d633970
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d633970) returned -1
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'kolab-server', returning 0x55f73d7190c0
+[2016-07-07 18:56:44 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d633970 (conn 0x55f73d702860) is allocated
+[2016-07-07 18:56:44 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d633970) completed successfully
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d7190c0) returned 0
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d7190c0
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d7190c0) returned -1
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'airchat-001', returning 0x55f73d721de0
+[2016-07-07 18:56:44 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d7190c0 (conn 0x55f73d702860) is allocated
+[2016-07-07 18:56:44 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d7190c0) completed successfully
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d721de0) returned 0
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d721de0
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d721de0) returned -1
+[2016-07-07 18:56:44 libvirt-php/core   ]: free_resource: Freeing libvirt domain resource at 0x55f73d721de0
+[2016-07-07 18:56:44 libvirt-php/core   ]: free_resource: virDomainFree(0x55f73d721de0) completed successfully
+[2016-07-07 18:56:44 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d702860) completed successfully
+[2016-07-07 18:56:44 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d721de0 (conn 0x7f8f5427c0e0) is not allocated
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d77b6f0
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d68af00
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d68af00) returned 0
+[2016-07-07 18:56:44 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x55f73d68af00 (xPath = (null))
+[2016-07-07 18:56:44 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d68af00 (conn 0x55f73d77b6f0) is allocated
+[2016-07-07 18:56:44 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d68af00) completed successfully
+[2016-07-07 18:56:44 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d77b6f0) completed successfully
+[2016-07-07 18:57:06 libvirt-php/core   ]: libvirt_connect: Connection to xen:/// established, returning 0x55f73d6214e0
+[2016-07-07 18:57:06 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d6214e0) completed successfully
+[2016-07-07 18:57:06 libvirt-php/core   ]: libvirt_connect: Connection to xen:/// established, returning 0x55f73d6214e0
+[2016-07-07 18:57:06 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d6214e0) completed successfully
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d634580
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d626aa0
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d626aa0) returned 0
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d626aa0
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d626aa0) returned 1
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'torrentServer', returning 0x55f73d510320
+[2016-07-07 18:57:07 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d626aa0 (conn 0x55f73d634580) is allocated
+[2016-07-07 18:57:07 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d626aa0) completed successfully
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d510320) returned 0
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d510320
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d510320) returned 13
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'MIAB', returning 0x55f73d62d100
+[2016-07-07 18:57:07 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d510320 (conn 0x55f73d634580) is allocated
+[2016-07-07 18:57:07 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d510320) completed successfully
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d62d100) returned 0
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d62d100
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d62d100) returned 4
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'a_ltc_cas', returning 0x55f73d510320
+[2016-07-07 18:57:07 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d62d100 (conn 0x55f73d634580) is allocated
+[2016-07-07 18:57:07 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d62d100) completed successfully
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d510320) returned 0
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d510320
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d510320) returned -1
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'kolab-server', returning 0x55f73d63e4c0
+[2016-07-07 18:57:07 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d510320 (conn 0x55f73d634580) is allocated
+[2016-07-07 18:57:07 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d510320) completed successfully
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d63e4c0) returned 0
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d63e4c0
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d63e4c0) returned -1
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'airchat-001', returning 0x55f73d647420
+[2016-07-07 18:57:07 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d63e4c0 (conn 0x55f73d634580) is allocated
+[2016-07-07 18:57:07 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d63e4c0) completed successfully
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d647420) returned 0
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d647420
+[2016-07-07 18:57:07 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d647420) returned -1
+[2016-07-07 18:57:07 libvirt-php/core   ]: free_resource: Freeing libvirt domain resource at 0x55f73d647420
+[2016-07-07 18:57:07 libvirt-php/core   ]: free_resource: virDomainFree(0x55f73d647420) completed successfully
+[2016-07-07 18:57:07 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d634580) completed successfully
+[2016-07-07 18:57:07 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d647420 (conn 0x7f8f5427c0e0) is not allocated
+[2016-07-07 18:57:08 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d6a0a40
+[2016-07-07 18:57:08 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:57:08 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:57:08 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:57:08 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:57:08 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:57:08 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:57:08 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:57:08 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:57:08 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:57:08 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:57:08 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d5f0210
+[2016-07-07 18:57:08 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d5f0210) returned 0
+[2016-07-07 18:57:08 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x55f73d5f0210 (xPath = (null))
+[2016-07-07 18:57:08 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d5f0210 (conn 0x55f73d6a0a40) is allocated
+[2016-07-07 18:57:08 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d5f0210) completed successfully
+[2016-07-07 18:57:08 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d6a0a40) completed successfully
+[2016-07-07 18:57:29 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d77be20
+[2016-07-07 18:57:29 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:57:29 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:57:29 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:57:29 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:57:29 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:57:29 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:57:29 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:57:29 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:57:29 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:57:29 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:57:29 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d7392b0
+[2016-07-07 18:57:29 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d7392b0) returned 0
+[2016-07-07 18:57:29 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x55f73d7392b0 (xPath = (null))
+[2016-07-07 18:57:29 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d7392b0 (conn 0x55f73d77be20) is allocated
+[2016-07-07 18:57:29 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d7392b0) completed successfully
+[2016-07-07 18:57:29 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d77be20) completed successfully
+[2016-07-07 18:57:33 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d73a020
+[2016-07-07 18:57:33 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:57:33 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:57:33 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:57:33 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:57:33 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:57:33 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:57:33 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:57:33 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:57:33 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:57:33 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:57:33 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d73a730
+[2016-07-07 18:57:33 libvirt-php/core   ]: libvirt_domain_get_screenshot: get_feature_binary('screenshot') returned /usr/bin/gvnccapture
+[2016-07-07 18:57:33 libvirt-php/vnc    ]: vnc_refresh_screen: Server is localhost, port is 5900, scancode is 10
+[2016-07-07 18:57:33 libvirt-php/vnc    ]: vnc_refresh_screen: server is localhost, port is 5900
+[2016-07-07 18:57:33 libvirt-php/vnc    ]: vnc_connect: Opened socket with descriptor #19
+[2016-07-07 18:57:33 libvirt-php/vnc    ]: vnc_write_client_version: VNC Client version packet sent
+[2016-07-07 18:57:33 libvirt-php/vnc    ]: vnc_authorize: Security None selected
+[2016-07-07 18:57:33 libvirt-php/vnc    ]: vnc_authorize: VNC Client authorized
+[2016-07-07 18:57:33 libvirt-php/vnc    ]: vnc_connect: Share desktop flag sent (1)
+[2016-07-07 18:57:33 libvirt-php/vnc    ]: vnc_read_server_init: Server init - reading framebuffer parameters
+[2016-07-07 18:57:33 libvirt-php/vnc    ]: vnc_read_server_init: Name length is 19
+[2016-07-07 18:57:33 libvirt-php/vnc    ]: vnc_parse_fb_params: Read dimension bytes: width = { 0x02, 0xd0 }, height = { 0x01, 0x90 }, little endian
+[2016-07-07 18:57:33 libvirt-php/vnc    ]: vnc_parse_fb_params: Filling the parameters structure with width = 720, height = 400
+[2016-07-07 18:57:33 libvirt-php/vnc    ]: vnc_parse_fb_params: Desktop name set to 'QEMU (debianwheezy)'
+[2016-07-07 18:57:33 libvirt-php/vnc    ]: vnc_parse_fb_params: width = 720, height = 400, bpp = 32, depth = 24, bigEndian = 0, trueColor = 1
+[2016-07-07 18:57:33 libvirt-php/vnc    ]: vnc_parse_fb_params: maxColors = { 255, 255, 255 }, shifts = { 16, 8, 0 }
+[2016-07-07 18:57:33 libvirt-php/vnc    ]: vnc_parse_fb_params: Desktop name is 'QEMU (debianwheezy)' (19 bytes)
+[2016-07-07 18:57:33 libvirt-php/vnc    ]: vnc_refresh_screen: Sending key press emulation for key 10
+[2016-07-07 18:57:33 libvirt-php/vnc    ]: vnc_send_key: Pressing key 10 [0x0a], modifier: true
+[2016-07-07 18:57:33 libvirt-php/vnc    ]: vnc_send_key: Write of 8 bytes successful
+[2016-07-07 18:57:33 libvirt-php/vnc    ]: vnc_refresh_screen: Requesting framebuffer update
+[2016-07-07 18:57:33 libvirt-php/vnc    ]: vnc_send_framebuffer_update: Sending standard update request
+[2016-07-07 18:57:33 libvirt-php/vnc    ]: vnc_send_framebuffer_update: Request sent
+[2016-07-07 18:57:33 libvirt-php/vnc    ]: vnc_refresh_screen: Closed descriptor #19
+[2016-07-07 18:57:33 libvirt-php/core   ]: libvirt_domain_get_screenshot: Getting screenshot of localhost:0 to temporary file /tmp/libvirt-php-tmp-LQp0kq
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_get_screenshot: Temporary file /tmp/libvirt-php-tmp-LQp0kq deleted
+[2016-07-07 18:57:34 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d73a730 (conn 0x55f73d73a020) is allocated
+[2016-07-07 18:57:34 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d73a730) completed successfully
+[2016-07-07 18:57:34 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d73a020) completed successfully
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d4bb1d0
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d581710
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d581710) returned 0
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d581710
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d581710) returned 1
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'torrentServer', returning 0x55f73d73d940
+[2016-07-07 18:57:34 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d581710 (conn 0x55f73d4bb1d0) is allocated
+[2016-07-07 18:57:34 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d581710) completed successfully
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d73d940) returned 0
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d73d940
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d73d940) returned 13
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'MIAB', returning 0x55f73d702df0
+[2016-07-07 18:57:34 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d73d940 (conn 0x55f73d4bb1d0) is allocated
+[2016-07-07 18:57:34 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d73d940) completed successfully
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d702df0) returned 0
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d702df0
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d702df0) returned 4
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'a_ltc_cas', returning 0x55f73d73f530
+[2016-07-07 18:57:34 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d702df0 (conn 0x55f73d4bb1d0) is allocated
+[2016-07-07 18:57:34 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d702df0) completed successfully
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d73f530) returned 0
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d73f530
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d73f530) returned -1
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'kolab-server', returning 0x55f73d75a150
+[2016-07-07 18:57:34 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d73f530 (conn 0x55f73d4bb1d0) is allocated
+[2016-07-07 18:57:34 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d73f530) completed successfully
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d75a150) returned 0
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d75a150
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d75a150) returned -1
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'airchat-001', returning 0x55f73d7510a0
+[2016-07-07 18:57:34 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d75a150 (conn 0x55f73d4bb1d0) is allocated
+[2016-07-07 18:57:34 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d75a150) completed successfully
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d7510a0) returned 0
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_get_interface_devices: Getting interface device list for domain 0x55f73d7510a0
+[2016-07-07 18:57:34 libvirt-php/core   ]: libvirt_domain_get_id: virDomainGetID(0x55f73d7510a0) returned -1
+[2016-07-07 18:57:34 libvirt-php/core   ]: free_resource: Freeing libvirt domain resource at 0x55f73d7510a0
+[2016-07-07 18:57:34 libvirt-php/core   ]: free_resource: virDomainFree(0x55f73d7510a0) completed successfully
+[2016-07-07 18:57:34 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d4bb1d0) completed successfully
+[2016-07-07 18:57:34 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d7510a0 (conn 0x7f8f5427bf60) is not allocated
+[2016-07-07 18:57:38 libvirt-php/core   ]: libvirt_connect: Connection to xen:///system established, returning 0x55f73d771ba0
+[2016-07-07 18:57:38 libvirt-php/core   ]: libvirt_list_domains: Found 3 domains
+[2016-07-07 18:57:38 libvirt-php/core   ]: libvirt_list_domains: virConnectListDomains returned 3 domains
+[2016-07-07 18:57:38 libvirt-php/core   ]: libvirt_list_domains: Found running domain debianwheezy with ID = 1
+[2016-07-07 18:57:38 libvirt-php/core   ]: libvirt_list_domains: Found running domain torrentServer with ID = 13
+[2016-07-07 18:57:38 libvirt-php/core   ]: libvirt_list_domains: Found running domain MIAB with ID = 4
+[2016-07-07 18:57:38 libvirt-php/core   ]: libvirt_list_domains: virConnectNumOfDefinedDomains returned 3 domains
+[2016-07-07 18:57:38 libvirt-php/core   ]: libvirt_list_domains: virConnectListDefinedDomains returned 3 domains
+[2016-07-07 18:57:38 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain a_ltc_cas
+[2016-07-07 18:57:38 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain kolab-server
+[2016-07-07 18:57:38 libvirt-php/core   ]: libvirt_list_domains: Found inactive domain airchat-001
+[2016-07-07 18:57:38 libvirt-php/core   ]: libvirt_domain_lookup_by_name: domain name = 'debianwheezy', returning 0x55f73d772400
+[2016-07-07 18:57:38 libvirt-php/core   ]: libvirt_domain_get_info: virDomainGetInfo(0x55f73d772400) returned 0
+[2016-07-07 18:57:38 libvirt-php/core   ]: libvirt_domain_get_xml_desc: Getting the XML for domain 0x55f73d772400 (xPath = (null))
+[2016-07-07 18:57:38 libvirt-php/core   ]: check_resource_allocation: libvirt domain resource 0x55f73d772400 (conn 0x55f73d771ba0) is allocated
+[2016-07-07 18:57:38 libvirt-php/core   ]: php_libvirt_domain_dtor: virDomainFree(0x55f73d772400) completed successfully
+[2016-07-07 18:57:38 libvirt-php/core   ]: php_libvirt_connection_dtor: virConnectClose(0x55f73d771ba0) completed successfully

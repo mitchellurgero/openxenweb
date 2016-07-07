@@ -130,3 +130,13 @@ div#frame > iframe {
     height: 500px;
     border: none;
 }
+.table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
+    border: none;
+}
+.navbar-transparent {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+
+.navbar-transparent li { color: #000 } 

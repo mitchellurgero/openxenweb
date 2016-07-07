@@ -88,13 +88,39 @@ function getDomainInfo($domain){
 			?>
 			<tr><td>Autostart with Host</td><td><input id="vm_auto_current" name="vm_auto_current" type="checkbox" value="autostart" <?php echo $checked; ?>></td></tr>
 		</table>
-		<br />
-		<br />
 		<div class="row">
+<nav class="navbar navbar-transparent">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">VM Controls
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#" onClick="startVM('<?php echo $domain; ?>')">Start</a></li>
+          <li><a href="#" onClick="pauseVM('<?php echo $domain; ?>')">Pause</a></li>
+          <li><a href="#" onClick="stopVM('<?php echo $domain; ?>')">Stop VM</a></li>
+          <li><a href="#" onClick="getScreen('<?php echo $domain; ?>')">Screenshot</a></li>
+        </ul>
+      </li>
+      <li><a target="_blank" href="http://<?php echo $_SERVER['SERVER_ADDR'];?>/code/workspace/OpenVirt/vnc/index.php?host=<?php echo $_SERVER['SERVER_ADDR'];?>&port=<?php echo $vnc; ?>">View Console</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><button class="btn btn-danger" onclick="deleteVM('<?php echo $domain; ?>')">Delete VM</button></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+			<br /> 
 			<div class="text-center">
-				<button class="btn btn-primary" onClick="startVM('<?php echo $domain; ?>')">Start VM</button>&nbsp;<button class="btn btn-primary" onClick="pauseVM('<?php echo $domain; ?>')">Pause VM</button>&nbsp;<button class="btn btn-primary" onClick="stopVM('<?php echo $domain; ?>')">Stop VM</button>
-				<button class="btn btn-primary" onClick="getScreen('<?php echo $domain; ?>')">Screenshot</button>&nbsp;<a class="btn btn-primary" target="_blank" href="http://<?php echo $_SERVER['SERVER_ADDR'];?>/code/workspace/OpenVirt/vnc/index.php?host=<?php echo $_SERVER['SERVER_ADDR'];?>&port=<?php echo $vnc; ?>">Console</a> &nbsp;&nbsp; <button class="btn btn-danger" onclick="deleteVM('<?php echo $domain; ?>')">Delete VM</button><br />
-				<br /> <button class="btn btn-primary" onClick="changeVM('<?php echo $domain; ?>')">Save Changes</button>
+				<button class="btn btn-primary" onClick="changeVM('<?php echo $domain; ?>')">Save Changes</button>
 			</div>
 		</div>
 		</p>
