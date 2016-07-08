@@ -1,3 +1,41 @@
+			 function pageLoad(page){
+ 				document.title = "Loading..."
+ 				document.getElementById("pageContent").innerHTML = "<p>Loading " + page + ", Please wait...</p>";
+ 				load(true);
+ 				$.ajax({
+					method:'post',
+					url:'./page.php',
+					data:{
+						page:page
+					},
+					success:function(result) {
+						document.getElementById("pageContent").innerHTML = result;
+						document.title = capitalizeFirstLetter(page);
+						load(false);
+					}
+					}).fail(function(e) {
+						document.getElementById("pageContent").innerHTML = "Loading the page failed. Please try again.";
+						genModal("Error", "Loading the page failed. Please try again.");
+						load(false);
+					});
+			}
+			function load(type){
+				if(type === true){
+					$("#coverlay").show();
+					document.getElementById("loadAnim").style.display = '';
+				} else {
+					$("#coverlay").hide();
+					document.getElementById("loadAnim").style.display = 'none';
+				}
+			}
+			function genModal(head, body){
+				document.getElementById("genModalHeader").innerHTML = head;
+				document.getElementById("genModalBody").innerHTML = body;
+				$("#genModal").modal('show');
+			}
+
+
+
 function capitalizeFirstLetter(string) {
 	return string.charAt(0).toUpperCase() + string.slice(1);
 }

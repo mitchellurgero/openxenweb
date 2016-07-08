@@ -6,6 +6,7 @@
 
 
 session_start();
+try{
 include('functions.php');
 include('config.php');
 if(!isset($_SESSION['username'])){
@@ -48,7 +49,9 @@ switch($_POST['func']){
 		changeVM($_POST['vm_name'], $_POST['vm_auto_current']);
 		break;
 }
-
+}catch(Exception $ex){
+	echo '<br /><br /><div class="text-center">There has been a fatal error loading the requested funtion: <br /> '.$ex->getMessage().'</div>';
+}
 //functions
 
 function getDomainInfo($domain){

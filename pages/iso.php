@@ -24,7 +24,7 @@ echo '';
 					foreach($iso as $img){
 						if($img == "dummy.iso") { continue; }
 						$fs = round(filesize("/var/iso/$img") / 1024 / 1024,1);
-						echo '<tr><td>'.$img.'</td><td>'.$fs.'MB</td><td><button class="btn btn-danger" onClick="delISO(\''.$img.'\')">Delete ISO</button></td></tr>';
+						echo '<tr><td>'.$img.'</td><td>'.$fs.'MB</td><td></td></tr>'; //<button class="btn btn-danger" onClick="delISO(\''.$img.'\')">Delete ISO</button>
 					}
 				?>
 			</tbody>

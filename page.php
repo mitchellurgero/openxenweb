@@ -4,6 +4,7 @@ session_start();
 if(!isset($_SESSION['username'])){
 	die("You must be logged in to view this page!");
 }
+try{
 if(isset($_POST['page'])){
 	switch($_POST['page']){
 		case "dashboard":
@@ -32,6 +33,9 @@ if(isset($_POST['page'])){
 			break;
 		
 	}
+}
+}catch(Exception $ex){
+	echo '<br /><br /><div class="text-center">There has been a fatal error loading the requested page: <br /> '.$ex->getMessage().'</div>';
 }
 //Simple page functions..
 function dashboard(){
