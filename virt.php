@@ -89,7 +89,7 @@ function getDomainInfo($domain){
 			<tr><td>Autostart with Host</td><td><input id="vm_auto_current" name="vm_auto_current" type="checkbox" value="autostart" <?php echo $checked; ?>></td></tr>
 		</table>
 		<div class="row">
-<nav class="navbar navbar-transparent">
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -113,7 +113,7 @@ function getDomainInfo($domain){
       <li><a target="_blank" href="http://<?php echo $_SERVER['SERVER_ADDR'];?>/code/workspace/OpenVirt/vnc/index.php?host=<?php echo $_SERVER['SERVER_ADDR'];?>&port=<?php echo $vnc; ?>">View Console</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><button class="btn btn-danger" onclick="deleteVM('<?php echo $domain; ?>')">Delete VM</button></li>
+        <li><a href="#" style="color:red" onclick="deleteVM1('<?php echo $domain; ?>')">Delete VM</a></li>
       </ul>
     </div>
   </div>
@@ -228,7 +228,7 @@ function createVM($name, $memory, $arch, $cores, $hdd, $iso, $netType, $netDevic
 	$nets = array( $net );
 	$name = preg_replace('/\s+/', '', $name);
 	echo "Create Virtual HDD for VM <br />";
-	//$hdd_img = libvirt_image_create($conn, $name.".qcow2", $hdd."G", "qcow2");
+	//$hdd_img = libvirt_image_create($conn, $name.".img", $hdd."G", "file");
 	$hdd_img = shell_exec("sudo qemu-img create -f file /var/lib/libvirt/images/$name.img $hdd"."G");
 	$err = libvirt_get_last_error();
 	$storage = getStorageInfo();
@@ -303,7 +303,7 @@ function createXML($name, $arch, $memory, $memory, $cores, $iso, $hdd_ar, $nets,
 					</disk>
 					$netstr
 					<input type='mouse' bus='ps2'/>
-					<graphics type='vnc' port='-1' autoport='yes' listen='0.0.0.0'/>
+					<graphics type='vnc' port='-1' autoport='yes' listen='0.0.0.0' keymap='en-us'/>
 					<console type='pty'/>
 					<sound model='ac97'/>
 					<video>

@@ -76,7 +76,11 @@ function pauseVM(vm){
 			load(false);
 		});
 }
-function deleteVM(vm){
+function deleteVM1(vm){
+	vm = "'" + vm + "'";
+	genModal("Delete " + vm + "?","Are you sure you want to delete " + vm + "?<br />Note: This will not delete the VM's hard drive.<br /><br />" + '<div class="pull-right"><button class="btn btn-sm btn-danger" onClick="deleteVM2(' + vm + ')">Yes, Please delete the VM</button></div><br /><br />');
+}
+function deleteVM2(vm){
 	load(true);
  	$.ajax({
 		method:'post',
@@ -95,7 +99,12 @@ function deleteVM(vm){
 			load(false);
 		});
 }
-function delDisk(pool, disk){
+function delDisk1(pool, disk){
+	pool = "'" + pool + "'";
+	disk = "'" + disk + "'";
+	genModal("Delete " + disk + "?", "Are you sure you want to delete the vDisk " + disk + "?<br />Note: This is permanent, and cannot be undone!<br /><br />" + '<div class="pull-right"><button class="btn btn-sm btn-danger" onClick="delDisk2(' + pool + ',' + disk + ')">Yes, Please delete the vDisk</button></div><br /><br />');
+}
+function delDisk2(pool, disk){
 	load(true);
  	$.ajax({
 		method:'post',

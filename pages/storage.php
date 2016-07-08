@@ -27,7 +27,7 @@ echo '';
 					$volRes = libvirt_storagevolume_lookup_by_name($store, $volume);
 					$volInfo =libvirt_storagevolume_get_info($volRes);
 					$size = $volInfo['capacity'] / 1024 / 1024 / 1024;
-					echo '<tr><td>'.$volume.'</td><td>'.$size.'GB</td><td><button class="btn btn-danger" onClick="delDisk(\''.$pool.'\',\''.$volume.'\')">Delete vDisk</button></td></tr>';
+					echo '<tr><td>'.$volume.'</td><td>'.$size.'GB</td><td><button class="btn btn-danger" onClick="delDisk1(\''.$pool.'\',\''.$volume.'\')">Delete vDisk</button></td></tr>';
 				}
 				echo '</table>';
 			}
