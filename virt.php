@@ -110,9 +110,9 @@ function getDomainInfo($domain){
           <li><a href="#" onClick="startVM('<?php echo $domain; ?>')">Start</a></li>
           <li><a href="#" onClick="pauseVM('<?php echo $domain; ?>')">Pause</a></li>
           <li><a href="#" onClick="stopVM('<?php echo $domain; ?>')">Stop VM</a></li>
-          <li><a href="#" onClick="getScreen('<?php echo $domain; ?>')">Screenshot</a></li>
         </ul>
       </li>
+      <li><a href="#" onClick="getScreen('<?php echo $domain; ?>')">Screenshot</a></li>
       <li><a target="_blank" href="http://<?php echo $_SERVER['SERVER_ADDR'];?>/code/workspace/OpenVirt/vnc/index.php?host=<?php echo $_SERVER['SERVER_ADDR'];?>&port=<?php echo $vnc; ?>">View Console</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
