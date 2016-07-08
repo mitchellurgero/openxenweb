@@ -279,7 +279,8 @@ function createXML($name, $arch, $memory, $memory, $cores, $iso, $hdd_ar, $nets,
 				<currentMemory>$memory</currentMemory>
 				<memory>$memory</memory>
 				<os>
-					<type arch='$arch'>hvm</type>
+					<type arch='x86_64' machine='xenfv'>hvm</type>
+					<loader type='rom'>hvmloader</loader>
 					<boot dev='cdrom'/>
 					<boot dev='hd'/>
 				</os>

@@ -180,7 +180,7 @@ function createVM(){
 			func:"create",
 			vm_name:document.getElementById("vm_name").value,
 			vm_mem:document.getElementById("vm_mem").value,
-			vm_arch:document.getElementById("vm_arch").value,
+			vm_arch:$("#vm_arch").val(),
 			vm_core:document.getElementById("vm_core").value,
 			vm_hdd:document.getElementById("vm_hdd").value,
 			vm_net:document.getElementById("vm_net").value,
