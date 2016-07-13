@@ -33,9 +33,12 @@ Once that is installed, we need to edit a few files:
 In /etc/php5/mods-available/libvirt.ini (Which may not exist yet, if it doesn't, just create it):
 
     extension=libvirt-php.so
+
+Then close that file. Now run the following command to enable libvirt-php in php5:
+
     php5enmod libvirt
 
-Then close that file. Now run the following command:
+Then run the following command to give www-data sudo access:
 
     visudo
 
