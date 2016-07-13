@@ -22,7 +22,7 @@ Once that is done, we will need to compile libvirt-php Version 0.4.8 from the li
 
 
     wget http://libvirt.org/sources/php/libvirt-php-0.4.8.tar.gz
-    tar -xvf http://libvirt.org/sources/php/libvirt-php-0.4.8.tar.gz
+    tar -xvf libvirt-php-0.4.8.tar.gz
     cd libvirt-0.4.8
     ./configure
     make && make install
