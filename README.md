@@ -47,18 +47,20 @@ This is required for the WebUI to run sudo commands. If you are unsure if you sh
     adduser www-data libvirt
 
 
-
 4. Now make the following dir:
 
 
     mkdir /var/iso
-    
+
+
 This is where you should be storing ISO's for install, for now, later it can be a configured folder.
+
 
 5. If you want VNC console access via the web interface, you must install the bin/socketpolicy.pl file as a service. you may use the following [link to help you do that](http://druss.co/2015/06/run-kestrel-in-the-background/) (I know it is for running asp.net on ubuntu, but how they run a script as a service will fit your needs)
 6. Edit /etc/libvirt/qemu.conf and change the following line:
 
 
     vnc_listen='0.0.0.0'
+
 
 This will allow VM's to listen on any interface for VNC access, but be careful, do not allow your hypervisor to be internet facing!
