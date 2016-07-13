@@ -48,7 +48,7 @@ And add the following to the bottom of the file:
 
 This is required for the WebUI to run sudo commands. If you are unsure if you should do this, just make sure that apache is not listening on an internet facing interface. Also run the following command to allow apache libvirt access:
 
-    adduser www-data libvirt
+    adduser www-data libvirtd
 
 
 Now make the following dir:
