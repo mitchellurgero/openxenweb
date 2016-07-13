@@ -10,21 +10,23 @@ This web interface has only been tested on Debian & Ubuntu.
 - libvirt Version 1.2.12(Specific, downgrade if needed.)
 
 ## Installation
+These instructions may be incomplete as this project is NOT finished yet!
+
 1. First we need to install some dependencies(Here we install libvirt-dev packages, make sure it is version 1.2.12!):
 
-'''
-apt-get install libvirt-dev xsltproc libxml2-dev libxml2 sudo git gvncviewer expect bc virt-manager
-'''
+
+    apt-get install libvirt-dev xsltproc libxml2-dev libxml2 sudo git gvncviewer expect bc virt-manager
+
 
 2. Once that is done, we will need to compile libvirt-php Version 0.4.8 from the libvirtphp project:
 
-'''
-wget http://libvirt.org/sources/php/libvirt-php-0.4.8.tar.gz
-tar -xvf http://libvirt.org/sources/php/libvirt-php-0.4.8.tar.gz
-cd libvirt-0.4.8
-./configure
-make && make install
-'''
+
+    wget http://libvirt.org/sources/php/libvirt-php-0.4.8.tar.gz
+    tar -xvf http://libvirt.org/sources/php/libvirt-php-0.4.8.tar.gz
+    cd libvirt-0.4.8
+    ./configure
+    make && make install
+    
 
 3. Once that is installed, we need to edit a few files:
 
@@ -34,9 +36,7 @@ In /etc/php5/mods-available/libvirt.ini (Which may not exist yet, if it doesn't,
 
 Then close that file. Now run the following command:
 
-'''
-visudo
-'''
+    visudo
 
 And add the following to the bottom of the file:
 
