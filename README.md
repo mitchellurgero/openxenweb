@@ -33,6 +33,7 @@ Once that is installed, we need to edit a few files:
 In /etc/php5/mods-available/libvirt.ini (Which may not exist yet, if it doesn't, just create it):
 
     extension=libvirt-php.so
+    php5enmod libvirt
 
 Then close that file. Now run the following command:
 
